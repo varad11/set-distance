@@ -1,11 +1,11 @@
 # set-distance
-Finds similarity/distance between two input sets.
-Algorithms implemented:
-1). Sorensen-Dice Coefficient.
-2). Jaccard Index.
-3). Ochiai Coefficient.
-4). Overlap Coefficient.
-5). Levenshtein/Edit Distance.
+Finds similarity/distance between two input sets.  
+Algorithms implemented:  
+1). Sorensen-Dice Coefficient.  
+2). Jaccard Index.  
+3). Ochiai Coefficient.  
+4). Overlap Coefficient.  
+5). Levenshtein/Edit Distance.  
 
 
 ## Installation 
