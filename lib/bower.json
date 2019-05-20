@@ -1,0 +1,57 @@
+{
+  "name": "set-distance",
+  "main": "dist/index.js",
+  "homepage": "https://github.com/varad11/set-distance",
+  "authors": [
+    "Varad Shevade"
+  ],
+  "description": "Finds measure of similarity/distance between two input sets.",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "typescript": "3.4.5"
+  },
+  "dependencies": {
+    "chai": "4.2.0",
+    "mocha": "6.1.4"
+  },
+  "keywords": [
+    "set",
+    "sorensen",
+    "dice",
+    "jaccard",
+    "ochiai",
+    "otsuka",
+    "barkman",
+    "overlap",
+    "levenshtein",
+    "edit-distance",
+    "distance",
+    "coefficient",
+    "algorithm",
+    "string",
+    "strings",
+    "difference",
+    "diff",
+    "similar",
+    "similarity",
+    "compare",
+    "comparison",
+    "match",
+    "matching",
+    "string",
+    "standard",
+    "utility",
+    "method",
+    "text",
+    "manipulation",
+    "measure",
+    "index"
+  ]
+}
