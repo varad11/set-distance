@@ -5,8 +5,8 @@ Algorithms implemented:
 2). Jaccard Index.  
 3). Ochiai Coefficient.  
 4). Overlap Coefficient.  
-5). Levenshtein/Edit Distance.
-6). Euclidean Distance
+5). Levenshtein/Edit Distance.  
+6). Euclidean Distance.  
 
 
 ## Installation 
