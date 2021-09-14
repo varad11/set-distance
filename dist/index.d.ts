@@ -72,16 +72,37 @@ export declare class Overlap extends SetOperation {
     getCoefficient(): any;
 }
 /**
-* @class: Overlap Coefficient
+* @class: Levenshtein Coefficient
 */
 export declare class Levenshtein extends SetOperation {
     private coefficient;
     constructor(set1: Array<string | number>, set2: Array<string | number>);
     /**
-    * @method: Calculate and return Overlap Coefficient
+    * @method: Calculate and return Levenshtein Coefficient
     * @param {}
     * @returns {any}
     */
     getCoefficient(): any;
+}
+/**
+ * @class: Euclidean Distance
+ */
+export declare class Euclidean {
+    private distance;
+    private set1;
+    private set2;
+    constructor(set1: Array<number>, set2: Array<number>);
+    /**
+    * @method: Calculate and return higher dimension Euclidean Distance
+    * @param {}
+    * @returns {number | Error}
+    */
+    getDistance(): number | Error;
+    /**
+    * @method: Calculate and return higher dimension Squared Euclidean Distance
+    * @param {}
+    * @returns {number | Error}
+    */
+    getSquaredDistance(): number | Error;
 }
 export {};

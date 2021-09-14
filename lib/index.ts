@@ -166,7 +166,7 @@ export class Overlap extends SetOperation {
 }
 
 /**
-* @class: Overlap Coefficient
+* @class: Levenshtein Coefficient
 */
 export class Levenshtein extends SetOperation {
     private coefficient: number;
@@ -178,7 +178,7 @@ export class Levenshtein extends SetOperation {
     }
 
     /**
-    * @method: Calculate and return Overlap Coefficient
+    * @method: Calculate and return Levenshtein Coefficient
     * @param {}
     * @returns {any}
     */
@@ -203,5 +203,55 @@ export class Levenshtein extends SetOperation {
         } catch (error) {
             return error;            
         }        
+    }
+}
+
+/**
+ * @class: Euclidean Distance
+ */
+export class Euclidean {
+    private distance: number;
+    private set1: Array<number>;
+    private set2: Array<number>;
+    constructor(set1: Array<number>, set2: Array<number>) {
+        this.set1 = set1;
+        this.set2 = set2
+        this.distance = 0;
+    }
+
+    /**
+    * @method: Calculate and return higher dimension Euclidean Distance
+    * @param {}
+    * @returns {number | Error}
+    */
+    public getDistance(): number | Error {
+        try {
+            if(this.set1.length == this.set2.length) {
+                const squaredDistance = this.getSquaredDistance();
+                this.distance = typeof squaredDistance === "number" ? Math.sqrt(squaredDistance) : 0;
+                return this.distance;
+            }
+            throw new Error("Euclidean distance supports only pairs")
+        } catch (error) {
+            return error;            
+        }        
+    }
+
+    /**
+    * @method: Calculate and return higher dimension Squared Euclidean Distance
+    * @param {}
+    * @returns {number | Error}
+    */
+    public getSquaredDistance(): number | Error {
+        try {
+            if(this.set1.length == this.set2.length) {
+                return this.set1.reduce((prev: number, current: number, index: number) => {
+                    return prev + Math.pow((current - this.set2[index]), 2)
+                }, 0);
+            }
+            throw new Error("Euclidean distance supports only pairs")
+        } catch (error) {
+            return error;            
+        }           
     }
 }

@@ -26,4 +26,14 @@ describe('set-distance test', () => {
         var ld = new index.Levenshtein(['S', 'A', 'T', 'U', 'R', 'D', 'A', 'Y'], ['S', 'U', 'N', 'D', 'A', 'Y']).getCoefficient();
         expect(ld).to.equal(3);
     });
+
+    it('Test Euclidean distance', () => {
+        var ed = new index.Euclidean([50, 60], [20, 25]).getDistance();
+        expect(ed).to.approximately(46.09, 2);
+    });
+
+    it('Test Squared Euclidean distance', () => {
+        var ed = new index.Euclidean([50, 60], [20,25]).getSquaredDistance();
+        expect(ed).to.equals(2125);
+    });
 });

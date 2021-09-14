@@ -23,6 +23,7 @@
     "overlap",
     "levenshtein",
     "edit-distance",
+    "euclidean",
     "distance",
     "coefficient",
     "algorithm",
@@ -55,7 +56,7 @@
     "typescript": "3.4.5"
   },
   "dependencies": {
-    "chai": "4.2.0",
-    "mocha": "6.1.4"
+    "chai": "^4.3.4",
+    "mocha": "^6.2.3"
   }
 }
