@@ -1,6 +1,6 @@
 {
   "name": "set-distance",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Finds measure of similarity/distance between two input sets.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
