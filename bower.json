@@ -15,11 +15,11 @@
     "tests"
   ],
   "devDependencies": {
-    "typescript": "3.4.5"
+    "typescript": "^3.4.5"
   },
   "dependencies": {
-    "chai": "4.2.0",
-    "mocha": "6.1.4"
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4"
   },
   "keywords": [
     "set",
@@ -32,6 +32,7 @@
     "overlap",
     "levenshtein",
     "edit-distance",
+    "euclidean",
     "distance",
     "coefficient",
     "algorithm",
